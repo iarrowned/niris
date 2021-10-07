@@ -1,0 +1,32 @@
+.add {
+  .container {
+    width: 1080px;
+    margin: 0 auto;
+
+    form {
+      input {
+        display: block;
+        margin: 0 auto;
+      }
+
+      input[type="text"] {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+.list {
+  .container {
+    table {
+      width: 500px;
+      margin: 0 auto;
+      tr {
+        th{}
+        td{
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+

@@ -1,0 +1,19 @@
+.add .container {
+  width: 1080px;
+  margin: 0 auto;
+}
+.add .container form input {
+  display: block;
+  margin: 0 auto;
+}
+.add .container form input[type=text] {
+  margin-bottom: 10px;
+}
+
+.list .container table {
+  width: 500px;
+  margin: 0 auto;
+}
+.list .container table tr td {
+  text-align: center;
+}
