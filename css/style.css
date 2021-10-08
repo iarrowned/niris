@@ -38,12 +38,21 @@ body {
   background: #ffe9c3;
 }
 
+.list {
+  text-align: center;
+}
+.list h2 {
+  padding-bottom: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.list .container {
+  height: 350px;
+  overflow: auto;
+}
 .list .container table {
   width: 500px;
   margin: 0 auto;
-}
-.list .container table tr th {
-  font-size: 18px;
 }
 .list .container table tr td {
   padding-top: 10px;

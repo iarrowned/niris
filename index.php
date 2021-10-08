@@ -21,11 +21,9 @@
     </div>
 </section>
 <section class="list">
+    <h2>Список городов</h2>
     <div class="container">
         <table class="list">
-            <tr>
-                <th>Список городов</th>
-            </tr>
             <?= show() ?>
         </table>
     </div>

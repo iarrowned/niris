@@ -11,11 +11,20 @@
     function show()
     {
         $cities = getCities();
-        foreach (array_reverse($cities) as $city)
+        if (count($cities) != 0)
         {
-            echo '<tr>
+            foreach (array_reverse($cities) as $city)
+            {
+                echo '<tr>
                     <td>'.$city['cityName'].'</td>
                 </tr>';
+            }
         }
+        else {
+            echo '<tr>
+                    <td>Городов в списке нет</td>
+                </tr>';
+        }
+
     }
 
