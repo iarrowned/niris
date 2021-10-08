@@ -1,16 +1,38 @@
+body { background: bisque; }
 .add {
   .container {
     width: 1080px;
-    margin: 0 auto;
-
+    margin: 50px auto 20px;
     form {
+      width: 550px;
+      height: 150px;
+      padding-top: 40px;
+      border-radius: 13px;
+      margin: 0 auto;
+      background: linear-gradient(160deg, rgba(2,0,36,1) 0%, rgba(64,166,168,1) 28%, rgba(0,212,255,1) 100%);
       input {
         display: block;
         margin: 0 auto;
       }
 
       input[type="text"] {
-        margin-bottom: 10px;
+        width: 250px;
+        text-align: center;
+        margin-bottom: 25px;
+        height: 30px;
+        border-radius: 4px;
+      }
+      input[type="submit"] {
+        width: 100px;
+        height: 25px;
+        border-radius: 3px;
+      }
+      input[type="submit"]:enabled:hover {
+        background: #d5ffd4;
+        cursor: pointer;
+      }
+      input[type="submit"]:active {
+        background: #ffe9c3;
       }
     }
   }
@@ -21,9 +43,14 @@
       width: 500px;
       margin: 0 auto;
       tr {
-        th{}
+
+        th{
+          font-size: 18px;
+        }
         td{
+          padding-top: 10px;
           text-align: center;
+          font-size: 16px;
         }
       }
     }

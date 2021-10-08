@@ -1,19 +1,52 @@
+body {
+  background: bisque;
+}
+
 .add .container {
   width: 1080px;
+  margin: 50px auto 20px;
+}
+.add .container form {
+  width: 550px;
+  height: 150px;
+  padding-top: 40px;
+  border-radius: 13px;
   margin: 0 auto;
+  background: linear-gradient(160deg, #020024 0%, #40a6a8 28%, #00d4ff 100%);
 }
 .add .container form input {
   display: block;
   margin: 0 auto;
 }
 .add .container form input[type=text] {
-  margin-bottom: 10px;
+  width: 250px;
+  text-align: center;
+  margin-bottom: 25px;
+  height: 30px;
+  border-radius: 4px;
+}
+.add .container form input[type=submit] {
+  width: 100px;
+  height: 25px;
+  border-radius: 3px;
+}
+.add .container form input[type=submit]:enabled:hover {
+  background: #d5ffd4;
+  cursor: pointer;
+}
+.add .container form input[type=submit]:active {
+  background: #ffe9c3;
 }
 
 .list .container table {
   width: 500px;
   margin: 0 auto;
 }
+.list .container table tr th {
+  font-size: 18px;
+}
 .list .container table tr td {
+  padding-top: 10px;
   text-align: center;
+  font-size: 16px;
 }
