@@ -1,14 +1,25 @@
 <?php
     require_once __DIR__ . "/connection.php";
 
-    function getCities(): array
+/**
+ * Функция возвращает массив уже имеющихся в базу данных городов.
+ * $dbh = null - закрытие соединения с базой данных.
+ * @return array
+ */
+function getCities(): array
     {
         $dbh = connect();
         $query = $dbh->query("SELECT cityName FROM cities");
         return $query->fetchAll(PDO::FETCH_ASSOC);
         $dbh = null;
     }
-    function show()
+
+/**
+ * Выводит в таблицу на главной странице список всех уже добавленных городов
+ * от самого последнего добавленного к самым старым.
+ * Если городов нет - сообщает об этом.
+ */
+function show()
     {
         $cities = getCities();
         if (count($cities) != 0)
