@@ -15,7 +15,7 @@
     $dbh = connect();
     $statement = $dbh->prepare("INSERT INTO cities (cityName) VALUES (:cityName)");
     $statement->execute([
-        'cityName' => $city,
+        'cityName' => strip_tags($city),
     ]);
     $dbh = null;
     header("Location: /");
